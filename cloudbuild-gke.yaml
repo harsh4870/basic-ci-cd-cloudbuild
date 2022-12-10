@@ -6,7 +6,7 @@ steps:
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - run
-  - --filename=./deployment.yaml
+  - --filename=output/expanded
   - --image=gcr.io/$PROJECT_ID/$REPO_NAME/$BRANCH_NAME:$SHORT_SHA
   - --location=us-central1-c
   - --cluster=standard-cluster-1
