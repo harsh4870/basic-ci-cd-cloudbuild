@@ -7,11 +7,10 @@ steps:
   args:
   - run
   - --filename=./deployment.yaml
-  - --image=$_IMAGE_NAME:$_IMAGE_VERSION
+  - --image=gcr.io/$PROJECT_ID/$REPO_NAME/$BRANCH_NAME:$_IMAGE_VERSION
   - --location=us-central1-c
   - --cluster=standard-cluster-1
 images:
-- '$_IMAGE_NAME:$_IMAGE_VERSION'
+- 'gcr.io/$PROJECT_ID/$REPO_NAME/$BRANCH_NAME:$_IMAGE_VERSION'
 substitutions:
-  _IMAGE_NAME: gcr.io/$PROJECT_ID/$REPO_NAME/$BRANCH_NAME
   _IMAGE_VERSION: $SHORT_SHA
