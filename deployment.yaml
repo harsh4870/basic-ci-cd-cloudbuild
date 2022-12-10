@@ -36,7 +36,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: gcr.io/auto-x-244507/basic-ci-cd-cloudbuild/main:$SHORT_SHA
+      - image: gcr.io/auto-x-244507/basic-ci-cd-cloudbuild/main:SHORT_SHA
         name: test-image
         ports:
         - containerPort: 8080
