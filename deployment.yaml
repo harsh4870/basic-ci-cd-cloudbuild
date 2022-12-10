@@ -36,7 +36,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: gcr.io/$PROJECT_ID/$REPO_NAME/$BRANCH_NAME:$SHORT_SHA
+      - image: @IMAGE_NAME@
         name: test-image
         ports:
         - containerPort: 8080
