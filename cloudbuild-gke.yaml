@@ -10,4 +10,3 @@ steps:
   - --image=gcr.io/$PROJECT_ID/$REPO_NAME/$BRANCH_NAME:$_IMAGE_VERSION
   - --location=us-central1-c
   - --cluster=standard-cluster-1
-  - --o expanded
