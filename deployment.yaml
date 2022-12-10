@@ -36,7 +36,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: IMAGE_NAME
+      - image: 
         name: test-image
         ports:
         - containerPort: 8080
